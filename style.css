@@ -1,35 +1,73 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
+.button {
+    background-color: transparent;
+    color: aquamarine;
+    border-color: aquamarine;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 20px;
+    height: 40px;
+    width: 80px;
+    font-family: "Abril Fatface", serif;
+    font-weight: 200;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s , 
+    border-color 0.15s, width 0.15s;
+
 }
 
-header {
-    text-align: center;
+.button:hover {
+    background-color: rgb(146, 233, 204);
+    color: white;
+    box-shadow: -2px 2px 5px rgb(44, 185, 138);
+    height: 40px;
+    width: 82px;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+.button:active {
+    border-color: rgb(59, 211, 160);
 }
 
-section {
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-h2 {
+.profile {
+    margin-top: 10px;
     margin-bottom: 10px;
+    height: 200px;
+    display: flex;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+.profile img {
+    height: 160px;
+    width: 160px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border-radius: 100px;
 }
 
-li {
-    margin-bottom: 5px;
+.location h2 {
+    color: black;
+    padding-bottom: 1px;
+    margin-bottom: 1px;
+    font-size: 60px;
+}
+
+.location p {
+    margin-top: 1px;
+    color: black;
+}
+
+.hello h1 {
+    font-family: "Abril Fatface", serif;
+    margin-bottom: 3px;
+}
+
+.hello p {
+    font-family: "Comic Neue", cursive;
+    margin-top: 1px;
+}
+
+.quote {
+    font-style: italic;
+    color: grey;
 }
