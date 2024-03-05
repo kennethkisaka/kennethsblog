@@ -1,74 +1,164 @@
-.button {
-    background-color: transparent;
-    color: aquamarine;
-    border-color: aquamarine;
-    border-style: solid;
-    border-width: 4px;
+.header {
+    display: grid;
+    grid-template-columns: 1fr 70px 70px 70px;
+    background-color: rgb(165, 216, 199);
+    height: 30px;
+    padding-top: 10px;
+    border-radius: 30px;
+}
+
+input {
+    color: black;
+    width: 60px;
+    height: 20px;
+    border-bottom: 2px;
     border-radius: 20px;
-    height: 40px;
-    width: 80px;
-    font-family: "Abril Fatface", serif;
-    font-weight: 200;
-    font-size: 14px;
+    border-width: 2px;
+    border-style: double;
+    border-color: cadetblue;
     cursor: pointer;
-    transition: background-color 0.2s , 
-    border-color 0.15s, width 0.15s;
-
+    transition: 0.2s;
 }
 
-.button:hover {
-    background-color: rgb(146, 233, 204);
-    color: white;
-    box-shadow: -2px 2px 5px rgb(44, 185, 138);
-    height: 40px;
-    width: 82px;
+input:hover {
+    background-color: rgb(109, 105, 105);
+    color: rgb(255, 255, 255);
+    width: 60px;
+    height: 20px;
+    border-bottom: 2px;
+    border-radius: 20px;
+    border-width: 2px;
+    border-style: double;
+    border-color: cadetblue;
+    cursor: pointer;
 }
 
-.button:active {
-    border-color: rgb(59, 211, 160);
+.home {
+    padding-left: 3%;
 }
 
 .profile {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height: 200px;
-    display: flex;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    border-radius: 65px;
+    column-gap: 10px;
 }
 
 .profile img {
-    height: 160px;
-    width: 160px;
-    padding-top: 20px;
+    width: 100%;
+    border-radius: 100%;
+
+}
+
+.pt-mono-regula {
+    background-color: rgb(165, 216, 199);
+    border-radius: 30px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 20px;
-    border-radius: 100px;
+    font-family: "PT Mono", monospace;
+    font-size: 12px;
 }
 
-.location h2 {
-    color: black;
-    padding-bottom: 1px;
-    margin-bottom: 1px;
-    font-size: 60px;
+
+.content {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-end: 20px;
 }
 
-.location p {
-    margin-top: 1px;
-    color: black;
+.content img {
+    width: 19%;
 }
 
-.hello h1 {
-    font-family: "Abril Fatface", serif;
-    margin-bottom: 3px;
+.languages {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.languages div {
+    background-color: rgb(165, 216, 199);
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    border-width: 100px;
+    border-color: black;
 }
 
-.hello p {
-    font-family: "Comic Neue", cursive;
-    margin-top: 1px;
+.language-icon-div p {
+    display: inline;
+    vertical-align: top;
+    padding-left: 10px;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.quote {
-    font-style: italic;
-    color: grey;
+.languages p {
+    font-size: 20px;
 }
 
+#social-media {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 0px;
+    margin-left: 30px;
+}
+
+.accounts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-radius: 50px;
+    background-color: rgb(165, 216, 199);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.accounts img {
+    width: 45px;
+}
+
+.accounts img:hover {
+    width: 50px;
+}
+
+#contacts {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 0px;
+    margin-left: 30px;
+}
+.contacts {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: rgb(165, 216, 199);
+    border-radius: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.contacts div {
+    vertical-align: top;
+    padding-left: 20px;
+}
+
+.contacts p {
+    display: inline;
+    vertical-align: 15px;
+}
+
+
+.contacts img {
+    width: 35px;
+    transition: width 0.2s;
+}
+
+.contacts img:hover {
+    width: 12%;
+}
+
+.footer {
+    border-radius: 5px;
+    height: 18px;
+    margin-bottom: 10px;
+}
