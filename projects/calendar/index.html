@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Keania+One&family=Tilt+Prism&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/head.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/calendar.css">
+    <link rel="stylesheet" href="css/clock.css">
+</head>
+<body>
+    <div class="header">
+        <div></div>
+        <div>
+            <p style="font-size: 0.8rem;">"Regrettably, the development of this page has been postponed until May due to unforeseen circumstances."</p>
+        </div>
+        <div></div>
+        <div>
+            <button id="mode-button"><img src="icons/lightmode.png" alt="mode" id="mode"></button>
+        </div>
+        <div></div>
+    </div>
+    <div class="main">
+        <div class="timezones">
+            <div class="time-box">
+                <div class="analog-digital">
+                    <div> </div>
+                    <div class="analog-head">
+                        <button type="button" class="twelve-hrs" id="12hrs">12hrs</button>
+                    </div>
+                    <div class="digital-head">
+                        <button type="button" id="24hrs">24hrs</button>
+                    </div>
+                    <div> </div>
+                </div>
+                <div>
+                    <p>Local time</p>
+                </div>
+                <div class="time">
+                    <div> </div>
+                    <div id="hours">
+                        <p id="hours-p">09</p>
+                    </div>
+                    <div id="minutes">
+                        <p id="minutes-p">00</p>
+                        <span id="hrs"></span>
+                    </div>
+                    <div class="am-pm">
+                        <div id="am">
+                            <img src="icons/lightmode.png" alt="day" id="am-icon">
+                            <p id="am-p">am</p>
+                        </div>
+                        <div id="pm">
+                            <p id="pm-p">pm</p>
+                            <img src="icons/darkmode.png" alt="night" id="pm-icon">
+                        </div>
+                    </div>
+                    <div> </div>
+                </div>
+                <div></div>
+                <p style="font-size: 0.8rem;"><b>NB: </b>Local Time and Date may change depending on your current location.</p>
+            </div>
+            <div class="time-box">
+                <div class="analog-digital">
+                    <div> </div>
+                    <div class="analog-head">
+                        <button type="button" class="twelve-hrs" id="utc12hrs">12hrs</button>
+                    </div>
+                    <div class="digital-head">
+                        <button type="button" id="utc24hrs">24hrs</button>
+                    </div>
+                    <div> </div>
+                </div>
+                <div>
+                    <p>UTC time</p>
+                </div>
+                <div class="time">
+                    <div> </div>
+                    <div id="hours">
+                        <p id="utc-hours-p">11</p>
+                    </div>
+                    <div id="minutes">
+                        <p id="utc-minutes-p">00</p>
+                        <span id="utc-hrs"></span>
+                    </div>
+                    <div class="am-pm">
+                        <div id="am">
+                            <img src="icons/lightmode.png" alt="day" id="utc-am-icon">
+                            <p id="utc-am-p">am</p>
+                        </div>
+                        <div id="pm">
+                            <p id="utc-pm-p">pm</p>
+                            <img src="icons/darkmode.png" alt="night" id="utc-pm-icon">
+                        </div>
+                    </div>
+                    <div> </div>
+                </div>
+                <p style="font-size: 0.8rem;">UTC stands for Coordinated Universal Time. It is the primary time standard by which the world regulates clocks and time. UTC is used as the basis for civil timekeeping worldwide. It is also known as Zulu time (Z), which is used in aviation and military operations.</p>
+            </div>
+        </div>
+        <div  class="calendar">
+            <div class="month-year">
+               <div id="month">
+                    <p id="p-month">January</p>
+               </div>
+               <div id="year">
+                    <p id="p-year">2004</p>
+               </div>
+            </div>
+            <div class="events-tasks">
+                <div id="event">
+                    <p style="font-size: 11px;">EVENTS</p>
+                </div>
+                <div id="task">
+                    <p style="font-size: 11px;">TASKS</p>
+                </div>
+                <div id="delayed-event">
+                    <p style="font-size: 11px;">DELAYED-EVENTS</p>
+                </div>
+                <div id="delayed-task">
+                    <p style="font-size: 11PX;">DELAYED-TASKS</p>
+                </div>
+            </div>
+            <div  class="space">
+                <p style="background-color: qua;" id="space">  </p>
+            </div>
+            <div class="calendar-rows">
+                <div class="week-days" id="Sunday">
+                    <p>S</p>
+                </div>
+                <div class="week-days" id="Monday">
+                    <p>M</p>
+                </div>
+                <div class="week-days" id="Tuesday">
+                    <p>T</p>
+                </div>
+                <div class="week-days" id="Wednesday">
+                    <p>W</p>
+                </div>
+                <div class="week-days" id="Thursday">
+                    <p>T</p>
+                </div>
+                <div class="week-days" id="Friday">
+                    <p>F</p>
+                </div>
+                <div class="week-days" id="Saturday">
+                    <p>S</p>
+                </div>
+            </div>
+            <div class="calendar-rows">
+                <div class="day">
+                    <p id="0">29</p>
+                    <p id="holiday-0">Jamhuri <br> day</p>
+
+                </div>
+                <div class="day">
+                    <p id="1">30</p>
+                </div>
+                <div class="day">
+                    <p id="2">31</p>
+                </div>
+                <div class="day">
+                    <p id="3">1</p>
+                </div>
+                <div class="day">
+                    <p id="4">2</p>
+                </div>
+                <div class="day">
+                    <p id="5">3</p>
+                </div>
+                <div class="day">
+                    <p id="6">4</p>
+                </div>
+            </div>
+            <div class="calendar-rows">
+                <div class="day">
+                    <p id="7">5</p>
+                </div>
+                <div class="day">
+                    <p id="8">6</p>
+                </div>
+                <div class="day">
+                    <p id="9">7</p>
+                </div>
+                <div class="day">
+                    <p id="10">8</p>
+                </div>
+                <div class="day">
+                    <p id="11">9</p>
+                </div>
+                <div class="day">
+                    <p id="12">10</p>
+                </div>
+                <div class="day">
+                    <p id="13">11</p>
+                </div>
+            </div>
+            <div class="calendar-rows">
+                <div class="day">
+                    <p id="14">12</p>
+                </div>
+                <div class="day">
+                    <p id="15">13</p>
+                </div>
+                <div class="day">
+                    <p id="16">14</p>
+                </div>
+                <div class="day">
+                    <p id="17">15</p>
+                </div>
+                <div class="day">
+                    <p id="18">16</p>
+                </div>
+                <div class="day">
+                    <p id="19">17</p>
+                </div>
+                <div class="day">
+                    <p id="20">18</p>
+                </div>
+            </div>
+            <div class="calendar-rows">
+                <div class="day">
+                    <p id="21">19</p>
+                </div>
+                <div class="day">
+                    <p id="22">20</p>
+                </div>
+                <div class="day">
+                    <p id="23">21</p>
+                </div>
+                <div class="day">
+                    <p id="24">22</p>
+                </div>
+                <div class="day">
+                    <p id="25">23</p>
+                </div>
+                <div class="day">
+                    <p id="26">24</p>
+                </div>
+                <div class="day">
+                    <p id="27">25</p>
+                </div>
+            </div>
+            <div class="calendar-rows">
+                <div class="day">
+                    <p id="28">26</p>
+                </div>
+                <div class="day">
+                    <p id="29">27</p>
+                </div>
+                <div class="day">
+                    <p id="30">28</p>
+                </div>
+                <div class="day">
+                    <p id="31">29</p>
+                </div>
+                <div class="day">
+                    <p id="32">30</p>
+                </div>
+                <div class="day">
+                    <p id="33">31</p>
+                </div>
+                <div class="day">
+                    <p id="34">1</p>
+                </div>
+            </div>
+            <div class="calendar-rows">ADD</div>
+            <div class="events-tasks">
+                <div id="event">
+                    1
+                </div>
+                <div id="task">
+                    2
+                </div>
+                <div id="delayed-event">
+                    3
+                </div>
+                <div id="delayed-task">
+                    4
+                </div>
+            </div>
+            <div class="calendar-rows">
+                <p style="font-size: 10px;"><b>NB: </b>The date shown on this calendar is your local date.</p>
+            </div>
+        </div>
+    </div>
+    <script src="javascript/utctime.js"></script>
+    <script src="javascript/currenttime.js"></script>
+    <script src="javascript/main.js"></script>
+    <script src="javascript/mode.js"></script>
+</body>
+</html>

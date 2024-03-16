@@ -1,0 +1,93 @@
+.calendar {
+    display: grid;
+    grid-template-rows: 3rem 2rem 1.5rem 4rem 4rem 4rem 4rem 4rem 4rem 1.5rem 2rem 1rem;
+    row-gap: 1px;
+    max-height: 37rem;
+}
+
+.month-year {
+    margin-bottom: 10px;
+    min-height: 3rem;
+    max-height: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+}
+
+.month-year div {
+    min-height: 1rem;
+    max-height: 3rem;
+    border-color: rgb(255, 253, 253);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.month-year div p {
+    color: black;
+    padding-left: 50px;
+}
+
+.events-tasks {
+    min-height: 1rem;
+    max-height: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    margin-top: 2px;
+}
+
+.space {
+    height: 0;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.space p {
+    margin-top: 0px;
+    padding-top: 1px;
+}
+
+.calendar-rows {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+    column-gap: 1px;
+}
+
+.week-days {
+    display: table;
+}
+
+.week-days p {
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.day {
+    background-color: rgba(139, 135, 135, 0.63);
+    display: table;
+}
+
+.day:hover {
+    box-shadow: -1px 2px 8px rgb(77, 77, 224);
+}
+
+.day p {
+    text-align: center; 
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.day p:hover {
+    font-size: 1.2rem;
+}
+
+#holiday-0 {
+    color: brown;
+    font-size: 8px;
+    text-align: center; 
+    vertical-align: middle;
+    display: table-cell;
+}
+

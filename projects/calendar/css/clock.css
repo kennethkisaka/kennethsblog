@@ -1,0 +1,99 @@
+.analog-digital {
+    display: grid;
+    grid-template-columns: 1fr 50px 50px 1fr;
+    column-gap: 5px;
+}
+
+.analog-digital div {
+    border-radius: 0.5rem;
+}
+
+button {
+    background-color: rgba(133, 252, 252, 0.685);
+    border-radius: 0.5rem;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(157, 240, 240);
+    border-radius: 0.5rem;
+}
+
+#twelve-hrs:active {
+    background-color: rgb(157, 240, 240);
+}
+
+.timezones {
+    display: grid;
+    grid-template-rows: 18.5rem 18.5rem;
+    max-height: 37rem;
+}
+
+.time-box {
+    display: grid;
+    grid-template-rows: 1rem 10px 1fr;
+    row-gap: 10px;
+}
+
+.time {
+    max-height: 100px;
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 1fr 0.4fr 0.1fr;
+    column-gap: 5px;
+}
+
+.time div p {
+    font-family: "Keania One", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "XROT" 0,
+        "YROT" 0;
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#hours {
+    display: flex;
+    justify-content: end; /* Horizontally center */
+    align-items: center;
+}
+
+#hours-p {
+    font-size: 4rem;
+    margin: 0;
+}
+
+#minutes {
+    display: flex;
+    justify-content: start; /* Horizontally center */
+    align-items: center;
+}
+
+#minutes-p {
+    font-size: 4rem;
+    margin: 0;
+}
+
+
+
+#utc-hours-p {
+    font-size: 4rem;
+    margin: 0;
+}
+
+#utc-minutes-p {
+    font-size: 4rem;
+    margin: 0;
+}
+
+#am {
+    background-color: rgb(185, 188, 190);
+}
+
+#pm {
+    background-color: lightslategray;
+}
