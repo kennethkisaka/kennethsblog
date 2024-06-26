@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
+
+.name {
+    position: relative;
+    color: white;
+
+    margin-top: 30px;
+
+    font-size: 50px;
+
+    font-family: "Love Light", cursive;
+}
+
+.love-words {
+    position: relative;
+    
+    color: white;
+    font-size: 30px;
+
+    margin-left: 10px;
+
+    font-family: "Love Light", cursive;
+}
+
+.sender-name {
+    position: relative;
+    color: white;
+
+    font-size: 45px;
+
+    font-family: "Love Light", cursive;
+}
