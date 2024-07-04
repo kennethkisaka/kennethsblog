@@ -1,0 +1,173 @@
+#its-about {
+    font-size: 80px;
+    text-align: center;
+}
+
+.about {
+    max-width: 350px;
+    display: block;
+
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 5px;
+}
+
+.about-p {
+    font-family: "Playwrite ES Deco", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 40px;
+    color: rgb(220, 93, 47);
+
+    text-align: center;
+}
+
+.personal-img {
+    max-width: 200px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.personal {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr 200px 1fr;
+}
+
+@media (max-width: 412px) {
+    
+}
+
+@media (min-width: 600px) {
+    .personal-img {
+        max-width: 300px;
+    }
+    .personal {
+        grid-template-columns: 1fr 300px 1fr 300px 1fr;
+    }
+}
+
+@media (min-width: 1010px) {
+    .personal-img {
+        max-width: 500px;
+    }
+    .personal {
+        grid-template-columns: 1fr 500px 1fr 500px 1fr;
+    }   
+}
+
+.main-gallery {
+    border-radius: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+    gap: 10px;
+    padding: 10px;
+}
+
+.gallery-item {
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-item.paragraph {
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.gallery-item.paragraph p {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #333;
+}
+
+#try {
+    font-size: 30px;
+    line-height: 56px;
+    font-weight: 400;
+    letter-spacing: -.5px;
+
+    text-align: center;
+}
+
+#styles {
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 500;
+    letter-spacing: -.5px;
+}
+
+#wide {
+    font-size: 30px;
+    line-height: 56px;
+    font-weight: 400;
+    letter-spacing: -.5px;
+
+    text-align: center;
+}
+
+#equipments {
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 500;
+    letter-spacing: -.5px;
+}
+
+#and {
+    font-size: 30px;
+    line-height: 56px;
+    font-weight: 500;
+    letter-spacing: -.5px;
+
+    text-align: center;
+}
+
+#unique {
+    text-align: center;
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 500;
+    letter-spacing: -.5px;
+}
+
+
+#for {
+    font-size: 40px;
+    line-height: 56px;
+    font-weight: 400;
+    letter-spacing: -.5px;
+
+    text-align: center;
+}
+
+#book {
+    text-align: center;
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 500;
+    letter-spacing: -.5px;
+
+}
+

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+#name {
+    text-align: center;
+    font-size: 30px;
+    line-height: 56px;
+    font-weight: 500;
+    letter-spacing: -.5px;
+
+}
+
+#name-div {
+    position: absolute;
+}
+
+#your-name {
+    font-size: 50px;
+    line-height: 56px;
+    font-weight: 500;
+    letter-spacing: -.5px;
+
+    color: rgb(53, 52, 52);
+}
+
+.intro {
+    position: relative;
+    left: 0;
+    right: 0;
+
+    min-height: 594px;
+    background-image: url("/photographer/images/intro.jpg");
+    background-size: cover;
+
+    margin-bottom: 150px;
+}
+
+.moments {
+    max-width: 200px;
+}
+
+.moment {
+    position: relative;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+
+.capturing-moments {
+    display: inline;
+
+    position: absolute;
+    right: 0;
+    left: 200px;
+}
+
+#photography {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 40px;
+    font-style: normal;
+    font-size: 80px;
+
+    color: rgb(88, 88, 252);
+}
+
+#moments {
+    font-family: "Island Moments", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+
+@media (min-width: 412px) {
+    .intro {
+        min-height: 594px;
+        min-width: 412;
+        background-image: url("/photographer/images/intro.jpg");
+        background-size: cover;
+    }
+
+    .moments {
+        max-width: 180px;
+    }
+
+    #photography {
+        font-size: 60px;
+    }
+    #moments {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 600px) {
+    .intro {
+        min-height: 1000px;
+        max-height: 1495;
+        background-image: url("/photographer/images/intro.jpg");
+        background-size: cover;
+    }
+
+    .moments {
+        max-width: 250px;
+    }
+
+    .capturing-moments {
+        display: inline;
+    
+        position: absolute;
+        right: 0;
+        left: 260px;
+    }
+    
+}
+
+@media (min-width: 1010px) {
+    .intro {
+        min-height: 1495px;
+        max-height: 1495;
+        background-image: url("/photographer/images/intro.jpg");
+        background-size: cover;
+    }
+
+    .moments {
+        min-width: 500px;
+    }
+
+
+    .capturing-moments {
+        display: inline;
+
+        position: absolute;
+        right: 0;
+        left: 500px;
+    }
+}
+
+
+
